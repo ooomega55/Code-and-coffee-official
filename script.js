@@ -61,7 +61,3 @@ function clearName() {
     }
   }
   
-  function alertThanks() {
-    alert('Thank you for the info');
-  }
-  //click button, get this message, DONT PRESS IT

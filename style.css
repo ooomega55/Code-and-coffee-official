@@ -1,5 +1,11 @@
+* {
+  --bs-gutter-x: 0 !important;
+}
+
 .test{
-  background-color: #F8E0C1;
+  background-color: #f8e0c1;
+  background-image: url("https://www.transparenttextures.com/patterns/diagonal-striped-brick.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 body, html {
@@ -36,6 +42,10 @@ body, html {
     border: 20px solid #759064;
     border-radius: 5px;
     opacity: 100%;
+  }
+
+  .meetingContent {
+    font-size: 25px;
   }
 
   /*Typing animation below*/

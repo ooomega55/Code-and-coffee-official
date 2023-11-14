@@ -15,13 +15,14 @@
 <body class="test">
   <!--nav-->
   <nav class="navbar navbar-expand-lg  navbar-light bg-success sticky-top">
+    <img src="c&cLogo.png" width="50px">
     <div class="ms-auto">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav m-2">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home<span class="sr-only"></span></a>
           </li>
@@ -64,6 +65,7 @@
       <div class="row">
         <h2 class="text-center p-3">About the Club</h2>
       </div>
+      <img src="c&cLogo.png" width="400px" class="mx-auto d-block">
       <div class="row">
         <div class="col-3"></div>
         <div class="col-6 p-3">
@@ -131,7 +133,7 @@
     </section>
   </div>
 
-<hr class="hr1">
+  <hr class="hr1">
 
   <!--Website submission form-->
   <div class="row" id="submit">
@@ -144,7 +146,8 @@
               <form action="" method="post" name="signUpForm" id="signUpForm">
                 <fieldset id="signUp">
                   <h1 class="textalign">Create a Tutor Session</h1>
-                  <p class="text-center">Submit the time you want and fill out the other necessary information to secure a session.</p>
+                  <p class="text-center">Submit the time you want and fill out the other necessary information to secure
+                    a session.</p>
 
                   <div class="row">
                     <div class="col-3">
@@ -152,19 +155,20 @@
                         onfocus="clearName();" onblur="resetName();" />
                     </div>
                     <div class="col-3">
-                      <input id="emailField" name="emailField" type="text" class="textfield mx-auto" value="Your School Email"
-                        onfocus="clearEmail();" onblur="resetEmail();" />
+                      <input id="emailField" name="emailField" type="text" class="textfield mx-auto"
+                        value="Your School Email" onfocus="clearEmail();" onblur="resetEmail();" />
                     </div>
                     <div class="col-6">
-                      <input id="timeField" name="timeField" type="text" class="textfield mx-auto" value="What time do you want?"
-                        onfocus="clearTime();" onblur="resetTime();" />
+                      <input id="timeField" name="timeField" type="text" class="textfield mx-auto"
+                        value="What time do you want?" onfocus="clearTime();" onblur="resetTime();" />
                     </div>
                   </div>
                   <div class="col-sm col-md col-lg col-xxl">
 
 
                     <input id="commentField" name="commentField" type="text" class="textfield mx-auto m-5"
-                      value="Please name the troubles you are having with your code. Add any other comments if needed." onfocus="clearComment();" onblur="resetComment();" />
+                      value="Please name the troubles you are having with your code. Add any other comments if needed."
+                      onfocus="clearComment();" onblur="resetComment();" />
 
                     <input id="submit" type="submit" name="submit" value="Send Message" onfocus="alertThanks();"
                       class="mx-auto" />
@@ -192,10 +196,7 @@
 
 
 
-
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 <!--Link goes here-->
 

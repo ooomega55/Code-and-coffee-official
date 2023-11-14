@@ -14,25 +14,25 @@ function clearName() {
     }
   }
   
-  function clearPhone() {
+  function clearTime() {
     if (
-      document.getElementById("phoneField").value == "Your Title"
+      document.getElementById("timeField").value == "What time do you want?"
     ) {
-      document.getElementById("phoneField").value = "";
+      document.getElementById("timeField").value = "";
     }
   }
   
-  function resetPhone() {
+  function resetTime() {
     if (
-      document.getElementById("phoneField").value == ""
+      document.getElementById("timeField").value == ""
     ) {
-      document.getElementById("phoneField").value = "Your Title";
+      document.getElementById("timeField").value = "What time do you want?";
     }
   }
   
   function clearComment() {
     if (
-      document.getElementById("commentField").value == "Your Comment"
+      document.getElementById("commentField").value == "Please name the troubles you are having with your code. Add any other comments if needed."
     ) {
       document.getElementById("commentField").value = "";
     }
@@ -42,21 +42,22 @@ function clearName() {
     if (
       document.getElementById("commentField").value == ""
     ) {
-      document.getElementById("commentField").value = "Your Comment";
+      document.getElementById("commentField").value = "Please name the troubles you are having with your code. Add any other comments if needed.";
     }
   }
   
   function clearEmail() {
     if (
-      document.getElementById("emailField").value == "Your Email"
+      document.getElementById("emailField").value == "Your School Email"
     ) {
       document.getElementById("emailField").value = "";
     }
   }
   
   function resetEmail() {
-    if (document.getElementById("emailField").value == "") {
-      document.getElementById("emailField").value = "Your Email";
+    if (document.getElementById("emailField").value == ""
+    ) {
+      document.getElementById("emailField").value = "Your School Email";
     }
   }
   

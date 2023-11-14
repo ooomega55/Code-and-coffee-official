@@ -143,26 +143,28 @@
             <div class="contentWrapper">
               <form action="" method="post" name="signUpForm" id="signUpForm">
                 <fieldset id="signUp">
-                  <h1 class="textalign">Alumni Website Submission</h1>
-                  <p class="text-center">Submit your website here for it to possibly become an alumni website.</p>
+                  <h1 class="textalign">Create a Tutor Session</h1>
+                  <p class="text-center">Submit the time you want and fill out the other necessary information to secure a session.</p>
 
                   <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-6 col-xxl-6">
+                    <div class="col-3">
                       <input id="nameField" name="nameField" type="text" class="textfield mx-auto" value="Your Name"
                         onfocus="clearName();" onblur="resetName();" />
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-6 col-xxl-6">
-                      <input id="emailField" name="emailField" type="text" class="textfield mx-auto" value="Your Email"
+                    <div class="col-3">
+                      <input id="emailField" name="emailField" type="text" class="textfield mx-auto" value="Your School Email"
                         onfocus="clearEmail();" onblur="resetEmail();" />
+                    </div>
+                    <div class="col-6">
+                      <input id="timeField" name="timeField" type="text" class="textfield mx-auto" value="What time do you want?"
+                        onfocus="clearTime();" onblur="resetTime();" />
                     </div>
                   </div>
                   <div class="col-sm col-md col-lg col-xxl">
-                    <input id="phoneField" name="phoneField" type="text" class="textfield mx-auto m-5"
-                      value="Your Title" onfocus="clearPhone();" onblur="resetPhone();" />
 
 
-                    <input id="commentField" name="commentField" type="text" class="textfield mx-auto"
-                      value="Your Comment" onfocus="clearComment();" onblur="resetComment();" />
+                    <input id="commentField" name="commentField" type="text" class="textfield mx-auto m-5"
+                      value="Please name the troubles you are having with your code. Add any other comments if needed." onfocus="clearComment();" onblur="resetComment();" />
 
                     <input id="submit" type="submit" name="submit" value="Send Message" onfocus="alertThanks();"
                       class="mx-auto" />
@@ -193,9 +195,9 @@
 
 
 
-
+<script src="script.js"></script>
 </body>
 <!--Link goes here-->
-<script src="script.js"></script>
+
 
 </html>

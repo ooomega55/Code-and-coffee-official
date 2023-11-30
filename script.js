@@ -60,4 +60,25 @@ function clearName() {
       document.getElementById("emailField").value = "Your School Email";
     }
   }
-  
+
+  console.clear();
+
+const blocks = document.querySelectorAll('.block-animate');
+
+let observer = new IntersectionObserver(entries => {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add('active');
+			observer.unobserve(entry.target);
+		} 
+		
+		// for testing
+		// else {
+		// 	entry.target.classList.remove('active');
+		// }
+	})
+}, { threshold: 0.5 });
+
+blocks.forEach(block => {
+	observer.observe(block);
+});

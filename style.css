@@ -16,12 +16,14 @@ body, html {
     font-family: 'Fjalla One', sans-serif;
   }
   
-  .aboutpics {
-    border: #245B19 solid 7px;
+  .border {
+    border: #245B19 solid 7px !important;
+    border-image: linear-gradient(to bottom, #245B19, #759064) 1 !important;
+  
   }
 
   .aboutpics:hover{
-    box-shadow: 0 0 25px rgba(37, 132, 26, 0.8); 
+    box-shadow: 0 0 35px rgba(37, 132, 26, 0.8); 
     transition: box-shadow .3s;
 }
 
@@ -140,6 +142,8 @@ body, html {
     text-align: center;
   }
 
+
+/*Code hover for cup*/
 .img-shadow-1:hover
 {
 transform:scale(1.1);
@@ -166,4 +170,107 @@ transition:all .6s ease-in-out;
 -moz-transition:all .6s ease-in-out;
 -ms-transition:all .6s ease-in-out;
 -o-transition:all .6s ease-in-out;
+}
+.block {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.block-animate {
+  --h2-scale: 0;
+}
+.block-animate-image {
+  position: relative;
+  overflow: hidden;
+}
+.block-animate-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary-color);
+  mix-blend-mode: multiply;
+  transform: scaleX(0);
+  transform-origin: 0px center;
+}
+.block-animate-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: transform 0.55s 0.3s ease-out;
+}
+.block-animate.active {
+  --h2-scale: 1;
+}
+.block-animate.active .animate-left::after {
+  animation: scaleOnOffLeft 1s ease-in-out forwards;
+}
+.block-animate.active .animate-right::after {
+  animation: scaleOnOffRight 1s ease-in-out forwards;
+}
+.block-animate.active .animate-delay-1::after {
+  animation-delay: 0.4s;
+}
+.block-animate.active .animate-delay-1 .block-animate-img {
+  transition-delay: 0.7s;
+}
+.block-animate.active .block-animate-img {
+  transform: scale(1) translateX(0);
+}
+.animate-left .block-animate-img {
+  transform: scale(1.2) translateX(-100%);
+}
+.animate-right .block-animate-img {
+  transform: scale(1.2) translateX(100%);
+}
+@keyframes scaleOnOffLeft {
+  0% {
+    transform: scaleX(0);
+ }
+  50% {
+    transform: scaleX(1);
+    transform-origin: 0 center;
+ }
+  50.1% {
+    transform-origin: 100% center;
+ }
+  100% {
+    transform: scaleX(0);
+    transform-origin: 100% center;
+ }
+}
+@keyframes scaleOnOffRight {
+  0% {
+    transform: scaleX(0);
+    transform-origin: 100% center;
+ }
+  50% {
+    transform: scaleX(1);
+    transform-origin: 100% center;
+ }
+  50.1% {
+    transform-origin: 0 center;
+ }
+  100% {
+    transform: scaleX(0);
+    transform-origin: 0 center;
+ }
+}
+@keyframes fadeOn {
+  0% {
+    opacity: 0;
+ }
+  100% {
+    opacity: 1;
+ }
+}
+@keyframes scaleRight {
+  0% {
+    transform: scaleX(0);
+ }
+  100% {
+    transform: scaleX(1);
+ }
 }

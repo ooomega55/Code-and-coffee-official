@@ -34,7 +34,7 @@ body, html {
   .aboutpadding {
     padding-top: 64px;
   }
-  
+
   .border {
     border: #01398D solid 7px !important;
     border-image: linear-gradient(to bottom, #012150, #1e6adb) 1 !important;
@@ -52,7 +52,7 @@ body, html {
 
   .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("code&coffeebg.png");
-    height: 500px;
+    height: 800px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -302,3 +302,4 @@ transition:all .6s ease-in-out;
   width: 100%;
   transform: translate(-3px, -150px);
 }
+

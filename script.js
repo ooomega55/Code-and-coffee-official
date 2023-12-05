@@ -82,3 +82,7 @@ let observer = new IntersectionObserver(entries => {
 blocks.forEach(block => {
 	observer.observe(block);
 });
+
+
+
+

@@ -30,6 +30,10 @@ body, html {
     font-size: 25px;
     font-family: 'Arsenal', sans-serif;
   }
+
+  .aboutpadding {
+    padding-top: 64px;
+  }
   
   .border {
     border: #01398D solid 7px !important;

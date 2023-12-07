@@ -469,11 +469,11 @@ color: #878787;
 
 /*another bad idea*/
 
-/*#container {
+#container {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(123%, -50%);
 }
 .steam {
   position: absolute;
@@ -536,7 +536,7 @@ color: #878787;
   height: 200px;
   width: 300px;
   border-radius: 0 0 150px 150px;
-  background-color: #fff;
+  background-color: #f0eadd;
   margin: auto;
   display: inline-block;
   overflow: hidden;
@@ -547,7 +547,7 @@ color: #878787;
   position: relative;
   height: 300px;
   width: 200px;
-  background-color: #F3F3F3;
+  background-color: #e1dbcd;
   display: inline-block;
   margin-left: 42%;
   margin-top: -3px;
@@ -560,7 +560,7 @@ color: #878787;
   height: 75px;
   width: 80px;
   border-radius: 0 150px 150px 0;
-  border: 15px solid #F3F3F3;
+  border: 15px solid #e1dbcd;
   margin-bottom: 95px;
   margin-left: 250px;
   display: inline-block;
@@ -572,17 +572,17 @@ color: #878787;
   height: 30px;
   width: 300px;  
   border-radius: 0 0 100px 100px;
-  background-color: #F9F9F9;
-  margin-top: -32px;
-  margin-left: 5px;
+  background-color: #e1dbcd;
+  margin-top: -4px;
+  margin-left: 3px;
   z-index: 2;
 }
 
-#shadow {
+/*#shadow {
   height: 10px;
   width: 300px;
   border-radius: 50%;
   margin-top: -5px;
   margin-left: 6px;
   background-color: #7bb8d4;
-} */
+}*/

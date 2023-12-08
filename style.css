@@ -142,7 +142,7 @@ body, html {
   #clearCookie {
     display: block;
     font-size: 1em;
-    color: #FFF;
+    color: #1e6adb;
     text-transform: uppercase;
     padding: .8em 1em .7em;
     border: 0;
@@ -305,7 +305,7 @@ transition:all .6s ease-in-out;
 
 
 
-
+/*code for footer*/
 ul {
   margin: 0px;
   padding: 0px;

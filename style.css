@@ -306,10 +306,6 @@ transition:all .6s ease-in-out;
 
 
 /*code for footer*/
-ul {
-  margin: 0px;
-  padding: 0px;
-}
 .footer-section {
 position: relative;
 }

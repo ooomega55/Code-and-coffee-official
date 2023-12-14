@@ -14,35 +14,19 @@ function clearName() {
     }
   }
   
-  function clearTime() {
+  function clearMessage() {
     if (
-      document.getElementById("timeField").value == "What time do you want?"
+      document.getElementById("messageField").value == "Please name the troubles you are having with your code. Add any other comments if needed."
     ) {
-      document.getElementById("timeField").value = "";
+      document.getElementById("messageField").value = "";
     }
   }
   
-  function resetTime() {
+  function resetMessage() {
     if (
-      document.getElementById("timeField").value == ""
+      document.getElementById("messageField").value == ""
     ) {
-      document.getElementById("timeField").value = "What time do you want?";
-    }
-  }
-  
-  function clearComment() {
-    if (
-      document.getElementById("commentField").value == "Please name the troubles you are having with your code. Add any other comments if needed."
-    ) {
-      document.getElementById("commentField").value = "";
-    }
-  }
-  
-  function resetComment() {
-    if (
-      document.getElementById("commentField").value == ""
-    ) {
-      document.getElementById("commentField").value = "Please name the troubles you are having with your code. Add any other comments if needed.";
+      document.getElementById("messageField").value = "Please name the troubles you are having with your code. Add any other comments if needed.";
     }
   }
   
@@ -82,8 +66,4 @@ let observer = new IntersectionObserver(entries => {
 blocks.forEach(block => {
 	observer.observe(block);
 });
-
-
-
-
 

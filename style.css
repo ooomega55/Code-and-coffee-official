@@ -20,6 +20,10 @@ body, html {
     background-color: #0C0052;
     color: white;
   }
+
+.navbar-toggler-icon{
+    background-color: #ffffff !important;
+}
   
   .font {
     color: white;
